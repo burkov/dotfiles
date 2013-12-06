@@ -1,0 +1,15 @@
+[http]
+    proxy = http://wwwgate0.mot.com:1080
+[color]
+    status = auto
+    branch = auto
+    diff = auto
+    grep = auto
+[user]
+    name = Alexander Burkov
+    email = a.p.burkov-at-gmail-dot-com
+[alias]
+    st = status
+    co = checkout
+    ci = commit
+    graph = log --all --oneline --graph --decorate

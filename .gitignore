@@ -1,0 +1,22 @@
+# ignore all
+*
+
+# git
+!.gitconfig
+!.gitignore
+
+# gdb
+!.gdbinit
+
+# zsh
+!.zshrc
+
+
+# vim
+!.vim
+!.vim/ru_keyboard_mappings
+!.vim/colors
+!.vim/colors/darkspectrum.vim
+!.vim/colors/xoria256.vim
+
+#emacs

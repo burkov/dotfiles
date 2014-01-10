@@ -1,5 +1,3 @@
-[http]
-    proxy = http://wwwgate0.mot.com:1080
 [color]
     status = auto
     branch = auto
@@ -13,3 +11,5 @@
     co = checkout
     ci = commit
     graph = log --all --oneline --graph --decorate
+[push]
+    default = simple

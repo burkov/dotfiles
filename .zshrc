@@ -22,7 +22,9 @@ ZSH_THEME="brk"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git gitignore rebar bundler gem rake ruby debian themes autojump colored-man history-substring-search extract fbterm vundle )
+plugins=(git gitignore rebar bundler gem rake ruby rvm debian themes autojump colored-man history-substring-search extract vundle pass)
 
 source $ZSH/oh-my-zsh.sh
 export PATH=$PATH:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:~/bin
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

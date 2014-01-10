@@ -20,3 +20,8 @@
 !.vim/colors/xoria256.vim
 
 #emacs
+!.emacs.d
+!.emacs.d/init.el
+!.emacs.d/color-themes/
+!.emacs.d/color-themes/themes
+!.emacs.d/color-themes/themes/xoria256.el

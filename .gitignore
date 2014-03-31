@@ -11,6 +11,9 @@
 # zsh
 !.zshrc
 
+# emacs
+!bin
+!bin/e
 
 # vim
 !.vim

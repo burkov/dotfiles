@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="candy"
 
-plugins=(git gitignore rebar themes colored-man history-substring-search extract)
+plugins=(safe-paste git gitignore rebar themes colored-man history-substring-search extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -18,3 +18,10 @@ export PATH=$PATH:~/bin
 export PATH=$PATH:/opt/erlang/bin
 export PATH=$PATH:/opt/idea/bin
 export PATH=$PATH:/opt/wireshark/bin
+
+# bind P and N for EMACS mode
+bindkey -M emacs '^[p' history-substring-search-up
+bindkey -M emacs '^[n' history-substring-search-down
+
+EDITOR=~/bin/e
+VISUAL=~/bin/e

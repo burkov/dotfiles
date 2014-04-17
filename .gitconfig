@@ -1,3 +1,7 @@
+[diff]
+    tool = meld
+[core]
+    pager = cat
 [color]
     status = auto
     branch = auto

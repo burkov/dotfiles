@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="candy"
 
-plugins=(z safe-paste git gitignore rebar themes colored-man history-substring-search extract)
+plugins=(z git gitignore rebar themes colored-man history-substring-search extract)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -16,14 +16,22 @@ export PATH=$PATH:/bin
 export PATH=$PATH:~/bin
 
 export PATH=$PATH:/opt/erlang/bin
+export PATH=$PATH:/opt/rebar
 export PATH=$PATH:/opt/idea/bin
 export PATH=$PATH:/opt/wireshark/bin
 
 # bind P and N for EMACS mode
 bindkey -M emacs '^[p' history-substring-search-up
 bindkey -M emacs '^[n' history-substring-search-down
+alias maek=make
+alias makr=make
+
+function erls() {
+    erl -noshell -s $1 $2 $3 -s init stop
+}
 
 #EDITOR=~/bin/e
 #VISUAL=~/bin/e
 EDITOR=vim
 VISUAL=vim
+export EQC_PROXY=http://wwwgate0.mot.com:1080

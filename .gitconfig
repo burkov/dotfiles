@@ -1,7 +1,9 @@
 [diff]
     tool = meld
+[merge]
+    conflictstyle = diff3
 [core]
-    pager = cat
+    pager = less -X
 [color]
     status = auto
     branch = auto
@@ -14,6 +16,6 @@
     st = status
     co = checkout
     ci = commit
-    graph = log --all --oneline --graph --decorate
+    gr = log --all --oneline --graph --decorate
 [push]
     default = simple

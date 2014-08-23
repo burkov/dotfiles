@@ -19,6 +19,7 @@ export PATH=$PATH:/opt/erlang/bin
 export PATH=$PATH:/opt/rebar
 export PATH=$PATH:/opt/idea/bin
 export PATH=$PATH:/opt/wireshark/bin
+export PATH=$PATH:/opt/neovim/bin
 
 # bind P and N for EMACS mode
 bindkey -M emacs '^[p' history-substring-search-up

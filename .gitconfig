@@ -1,7 +1,9 @@
 [diff]
     tool = meld
 [merge]
-    conflictstyle = diff3
+	conflictstyle = diff3
+[mergetool "meld"]
+	cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
 [core]
     pager = less -X
 [color]

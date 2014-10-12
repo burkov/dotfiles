@@ -10,8 +10,11 @@ Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-surround'
 Plugin 'kien/ctrlp.vim'
-"Plugin 'bling/vim-airline'
-Plugin 'Lokaltog/powerline'
+Plugin 'kien/rainbow_parentheses.vim'
+Plugin 'bling/vim-airline'
+"Plugin 'tpope/vim-fireplace'
+"Plugin 'guns/vim-clojure-static'
+"Plugin 'Lokaltog/powerline'
 Plugin 'xoria256.vim'
 call vundle#end()
 filetype plugin indent on
@@ -40,6 +43,7 @@ set gdefault
 set number
 "set list
 set mouse=a
+set ignorecase
 set smartcase
 
 set tabstop=4       "1 tab == 4 spaces
@@ -53,7 +57,7 @@ set hls
 "set wildmenu
 "set wildmode=longest:list
 set timeoutlen=200
-"
+set laststatus=2
 "set listchars=tab:→→,trail:.
 "
 set cursorline

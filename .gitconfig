@@ -16,6 +16,7 @@
     email = alex.burkov@motorolasolutions.com
 [alias]
     st = status
+    br = branch
     co = checkout
     ci = commit
     gr = log --all --oneline --graph --decorate

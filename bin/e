@@ -1,3 +1,0 @@
-# -*- mode: shell-script -*-
-#!/bin/bash
-exec emacsclient --alternate-editor="" -n "$@"

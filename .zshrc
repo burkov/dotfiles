@@ -2,7 +2,7 @@ ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="candy"
 
-plugins=(z git gitignore rebar themes colored-man history-substring-search extract)
+plugins=(z pip git brew gitignore rebar themes colored-man history-substring-search extract cabal)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -34,4 +34,10 @@ fi
 
 EDITOR=vim
 VISUAL=vim
-export EQC_PROXY=http://wwwgate0.mot.com:1080
+
+alias boclient-dev='~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient -J-DdumpSecure=true'
+alias boclient-abu='boclient-dev -J-Dbocore=http://abu.dev.ghcg.com:80/ -J-Dtradedb=http://tradedb.test.ghcg.com:8090/ -J-Daccount.summary.refresh.interval=5000 -J-DdumpSecure=true'
+
+
+export PGHOST=localhost
+export PGDATABASE=brk

@@ -1,11 +1,13 @@
 [diff]
-    tool = meld
+    tool = opendiff
 [merge]
-	conflictstyle = diff3
+    conflictstyle = diff3
 [mergetool "meld"]
-	cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
+    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
 [core]
+    editor = vim
     pager = less -X
+    excludesfile = /Users/brk/.gitignore_global
 [color]
     status = auto
     branch = auto
@@ -13,7 +15,7 @@
     grep = auto
 [user]
     name = Alexander Burkov
-    email = alex.burkov@motorolasolutions.com
+    email = abu@exante.eu
 [alias]
     st = status
     br = branch
@@ -22,3 +24,9 @@
     gr = log --all --oneline --graph --decorate
 [push]
     default = simple
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[mergetool "sourcetree"]
+    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+    trustExitCode = true

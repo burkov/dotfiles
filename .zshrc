@@ -15,11 +15,7 @@ export PATH=$PATH:/sbin
 export PATH=$PATH:/bin
 export PATH=$PATH:~/bin
 
-export PATH=$PATH:/opt/erlang/bin
-export PATH=$PATH:/opt/rebar
-export PATH=$PATH:/opt/idea/bin
-export PATH=$PATH:/opt/wireshark/bin
-export PATH=$PATH:/opt/neovim/bin
+export PATH=~/Library/Haskell/bin:$PATH
 
 alias maek=make
 alias makr=make

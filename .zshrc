@@ -32,7 +32,8 @@ EDITOR=vim
 VISUAL=vim
 
 alias boclient-dev='~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient -J-DdumpSecure=true'
-alias boclient-abu='boclient-dev -J-Dbocore=http://abu.dev.ghcg.com:80/ -J-Dtradedb=http://tradedb.test.ghcg.com:8090/ -J-Daccount.summary.refresh.interval=5000 -J-DdumpSecure=true'
+alias boclient-abu='boclient-dev -J-Dbocore=http://abu.dev.ghcg.com/ -J-Dtradedb=http://tradedb.test.ghcg.com:8090/ -J-Daccount.summary.refresh.interval=5000 -J-DdumpSecure=true'
+alias boclient-local='boclient-dev -J-Dbocore=http://localhost:8080/ -J-Dtradedb=http://tradedb.test.ghcg.com:8090/ -J-Daccount.summary.refresh.interval=5000 -J-DdumpSecure=true'
 
 
 export PGHOST=localhost

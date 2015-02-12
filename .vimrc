@@ -6,12 +6,12 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
-Plugin 'godlygeek/tabular'
-Plugin 'plasticboy/vim-markdown'
-Plugin 'tpope/vim-surround'
-Plugin 'kien/ctrlp.vim'
-Plugin 'kien/rainbow_parentheses.vim'
-Plugin 'bling/vim-airline'
+"Plugin 'godlygeek/tabular'
+"Plugin 'plasticboy/vim-markdown'
+"Plugin 'tpope/vim-surround'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'kien/rainbow_parentheses.vim'
+"Plugin 'bling/vim-airline'
 "Plugin 'tpope/vim-fireplace'
 "Plugin 'guns/vim-clojure-static'
 "Plugin 'Lokaltog/powerline'
@@ -58,7 +58,7 @@ set hls
 "set wildmode=longest:list
 set timeoutlen=200
 set laststatus=2
-"set listchars=tab:→→,trail:.
+set listchars=tab:→→,trail:.
 "
 set cursorline
 "set background=dark

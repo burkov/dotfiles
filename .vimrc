@@ -25,7 +25,7 @@ source ~/.vim/ru_keymap
 
 syntax on
 set background=dark
-colorscheme xoria256
+silent! colorscheme xoria256
 
 nnoremap <F4> :%s////c<Left><Left>
 nnoremap <F12> :set hls!<CR>

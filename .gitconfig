@@ -24,4 +24,4 @@
     log = diff-highlight | less -X
     show = diff-highlight | less
 [push]
-    default = simple
+    default = matching

@@ -1,12 +1,5 @@
-[diff]
-    tool = opendiff
-[merge]
-    conflictstyle = diff3
-[mergetool "meld"]
-    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
 [core]
     editor = vim
-    pager = less -X
     excludesfile = /Users/brk/.gitignore_global
 [color]
     status = auto
@@ -22,11 +15,13 @@
     co = checkout
     ci = commit
     gr = log --all --oneline --graph --decorate
+[merge]
+    conflictstyle = diff3
+[mergetool "meld"]
+    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
+[pager]
+    diff = diff-highlight | less
+    log = diff-highlight | less -X
+    show = diff-highlight | less
 [push]
     default = simple
-[difftool "sourcetree"]
-    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-    path = 
-[mergetool "sourcetree"]
-    cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-    trustExitCode = true

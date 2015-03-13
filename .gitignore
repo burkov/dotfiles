@@ -13,7 +13,7 @@
 
 # emacs
 !bin
-!bin/e
+!bin/diff-highlight
 
 # vim
 !.vim

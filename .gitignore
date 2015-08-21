@@ -1,6 +1,7 @@
 # ignore all
 *
 
+!.inputrc
 # git
 !.gitconfig
 !.gitignore

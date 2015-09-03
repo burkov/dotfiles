@@ -1,6 +1,6 @@
 # ignore all
 *
-
+!.psqlrc
 !.inputrc
 # git
 !.gitconfig

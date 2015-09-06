@@ -22,18 +22,22 @@ if [ "$COLORTERM" = "gnome-terminal" ]; then
 fi
 export EDITOR=vim
 export VISUAL=vim
-export LESS="-iMSx4FX"
+export LESS="-iMSx4FXR"
 
 #export MANPATH=/usr/local/opt/erlang/lib/erlang/man:$MANPATH
 
 # replace some BSD coreutils with GNU coreutils
-alias rm=grm
-alias cp=gcp
-alias mv=gmv
-alias sed=gsed
-alias sort=gsort
-alias gfind=gfind
 
+
+
+if [[ $(uname) == 'Darwin' ]]; then
+    alias rm=grm
+    alias cp=gcp
+    alias mv=gmv
+    alias sed=gsed
+    alias sort=gsort
+    alias gfind=gfind
+fi
 
 # postgres
 export PGHOST=localhost

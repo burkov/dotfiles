@@ -28,15 +28,13 @@ export LESS="-iMSx4FXR"
 
 # replace some BSD coreutils with GNU coreutils
 
-
-
 if [[ $(uname) == 'Darwin' ]]; then
     alias rm=grm
-    alias cp=gcp
+    alias cp=`echo /usr/local/Cellar/coreutils/*/bin/gcp` # git plugin has alias gcp = git cherry-pick
     alias mv=gmv
     alias sed=gsed
     alias sort=gsort
-    alias gfind=gfind
+    alias find=gfind
 fi
 
 # postgres

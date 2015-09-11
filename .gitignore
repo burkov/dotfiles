@@ -6,15 +6,14 @@
 !.gitconfig
 !.gitignore
 
+# tmux
+!.tmux.conf
+
 # gdb
 !.gdbinit
 
 # zsh
 !.zshrc
-
-# emacs
-!bin
-!bin/diff-highlight
 
 # vim
 !.vim
@@ -23,7 +22,9 @@
 !.vim/colors/darkspectrum.vim
 !.vim/colors/xoria256.vim
 
-#emacs
+# emacs
+!bin
+!bin/diff-highlight
 !.emacs.d
 !.emacs.d/init.el
 !.emacs.d/color-themes/

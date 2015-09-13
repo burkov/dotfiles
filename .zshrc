@@ -1,6 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="candy"
-plugins=(sublime z pip sublime git brew gitignore rebar themes colored-man history-substring-search extract cabal)
+plugins=(sublime z git brew gitignore rebar go colored-man history-substring-search extract)
 source $ZSH/oh-my-zsh.sh
 
 
@@ -17,9 +17,11 @@ export PATH=$PATH:/bin
 export PATH=$PATH:~/bin
 export PATH=~/Library/Haskell/bin:$PATH
 
-if [ "$COLORTERM" = "gnome-terminal" ]; then
-    export TERM=xterm-256color
-fi
+export GOPATH=$HOME/Go
+export GOROOT=/usr/local/opt/go/libexec
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin
+
 export EDITOR=vim
 export VISUAL=vim
 export LESS="-iMSx4FXR"

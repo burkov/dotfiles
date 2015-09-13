@@ -1,4 +1,3 @@
-" to add vundle do:
 "    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 set nocompatible
@@ -7,14 +6,15 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 "Plugin 'godlygeek/tabular'
-"Plugin 'plasticboy/vim-markdown'
+Plugin 'plasticboy/vim-markdown'
 "Plugin 'tpope/vim-surround'
-"Plugin 'kien/ctrlp.vim'
+Plugin 'kien/ctrlp.vim'
 "Plugin 'kien/rainbow_parentheses.vim'
-"Plugin 'bling/vim-airline'
+Plugin 'bling/vim-airline'
 "Plugin 'tpope/vim-fireplace'
 "Plugin 'guns/vim-clojure-static'
 "Plugin 'Lokaltog/powerline'
+Plugin 'fatih/vim-go'
 Plugin 'xoria256.vim'
 call vundle#end()
 filetype plugin indent on

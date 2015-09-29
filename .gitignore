@@ -22,9 +22,9 @@
 !.vim/colors/darkspectrum.vim
 !.vim/colors/xoria256.vim
 
-# emacs
 !bin
 !bin/diff-highlight
+# emacs
 !.emacs.d
 !.emacs.d/init.el
 !.emacs.d/color-themes/

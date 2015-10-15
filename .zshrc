@@ -3,7 +3,6 @@ ZSH_THEME="candy"
 plugins=(sublime z git brew gitignore rebar go colored-man history-substring-search extract)
 source $ZSH/oh-my-zsh.sh
 
-
 export LC_ALL=en_US.UTF-8
 
 ## exports
@@ -17,16 +16,17 @@ export PATH=$PATH:/bin
 export PATH=$PATH:~/bin
 export PATH=~/Library/Haskell/bin:$PATH
 
-export GOPATH=$HOME/Go
-export GOROOT=/usr/local/opt/go/libexec
+## go lang vars
+export GOPATH=$HOME/go
 export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$GOROOT/bin
 
+#export GOROOT=/usr/local/opt/go/libexec
+#export PATH=$PATH:$GOROOT/bin
+
+## visual
 export EDITOR=vim
 export VISUAL=vim
 export LESS="-iMSx4FXR"
-
-#export MANPATH=/usr/local/opt/erlang/lib/erlang/man:$MANPATH
 
 # replace some BSD coreutils with GNU coreutils
 
@@ -39,7 +39,7 @@ if [[ $(uname) == 'Darwin' ]]; then
     alias find=gfind
 fi
 
-# postgres
+## postgres
 export PGHOST=localhost
 export PGDATABASE=$(whoami)
 
@@ -47,6 +47,7 @@ export PGDATABASE=$(whoami)
 alias maek=make
 alias makr=make
 
+## exante aliases
 alias boclient-any='~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient \
 -J-DdumpSecure=true \
 -J-Dtradedb=http://tradedb.test.ghcg.com:8090/ \

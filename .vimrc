@@ -17,6 +17,7 @@ Plugin 'chrisbra/csv.vim'
 "Plugin 'Lokaltog/powerline'
 Plugin 'fatih/vim-go'
 Plugin 'xoria256.vim'
+Bundle 'cespare/vim-toml'
 call vundle#end()
 filetype plugin indent on
 

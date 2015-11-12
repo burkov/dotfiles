@@ -48,11 +48,13 @@ alias maek=make
 alias makr=make
 
 ## exante aliases
+# -J-Dtradedb=http://bocore.retail-stage.ghcg.com:8090/ \
 alias boclient-any='~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient \
 -J-DdumpSecure=true \
 -J-Dtradedb=http://tradedb.test.ghcg.com:8090/ \
 -J-Daccount.summary.refresh.interval=5000'
 
+alias boclient-retail='boclient-any -J-Dbocore=http://bocore.retail-stage.ghcg.com/' # -J-Dauthdb=http://localhost:8000/'
 alias boclient-test='boclient-any -J-Dbocore=http://bocore.test.ghcg.com/' # -J-Dauthdb=http://localhost:8000/'
 alias boclient-abu='boclient-any -J-Dbocore=http://abu.dev.ghcg.com/' # -J-Dauthdb=http://localhost:8000/'
 alias boclient-load='boclient-any -J-Dbocore=http://bocore2.load.ghcg.com/'

@@ -6,6 +6,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 
 ## exports
+export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$PATH:/usr/lib/lightdm/lightdm
 export PATH=$PATH:/usr/local/sbin
 export PATH=$PATH:/usr/local/bin
@@ -14,7 +15,9 @@ export PATH=$PATH:/usr/bin
 export PATH=$PATH:/sbin
 export PATH=$PATH:/bin
 export PATH=$PATH:~/bin
-export PATH=~/Library/Haskell/bin:$PATH
+export PATH=$PATH:~/anaconda/bin
+export PATH=$HOME/.gem/ruby/2.0.0/bin:$PATH
+export PATH=/opt/maven/bin:$PATH
 
 ## go lang vars
 export GOPATH=$HOME/go
@@ -49,16 +52,27 @@ alias makr=make
 
 ## exante aliases
 # -J-Dtradedb=http://bocore.retail-stage.ghcg.com:8090/ \
-alias boclient-any='~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient \
--J-DdumpSecure=true \
--J-Dtradedb=http://tradedb.test.ghcg.com:8090/ \
--J-Daccount.summary.refresh.interval=5000'
+# -J-Dtradedb=http://abu.dev.ghcg.com:8090/ \
+
+alias boclient-any='~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient -J-DdumpSecure=true -J-Daccount.summary.refresh.interval=5000'
 
 alias boclient-retail='boclient-any -J-Dbocore=http://bocore.retail-stage.ghcg.com/' # -J-Dauthdb=http://localhost:8000/'
 alias boclient-test='boclient-any -J-Dbocore=http://bocore.test.ghcg.com/' # -J-Dauthdb=http://localhost:8000/'
 alias boclient-abu='boclient-any -J-Dbocore=http://abu.dev.ghcg.com/' # -J-Dauthdb=http://localhost:8000/'
-alias boclient-load='boclient-any -J-Dbocore=http://bocore2.load.ghcg.com/'
-alias boclient-local='boclient-any -J-Dbocore=http://localhost:8080/'
+
+#alias boclient-any='~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient \
+#-J-Dtradedb=http://tradedb.test.ghcg.com:8090/ \
+#-J-DdumpSecure=true \
+#-J-Daccount.summary.refresh.interval=5000 \
+#-J-Dbocore=http://bocore2.load.ghcg.com'
+
+
+#~/Applications/BackOffice.app/Contents/Resources/boclient/bin/boclient \
+    #-J-DdumpSecure=true \
+    #-J-Dtradedb=http://abu.dev.ghcg.com:8090/ \
+    #-J-Daccount.summary.refresh.interval=5000 \
+    #-J-Dbocore=http://abu.dev.ghcg.com/ \
+    #-J-Dauthdb=https://authdb.test.ghcg.com:8080
 
 
 m() { mosh $1 -- tmux a }

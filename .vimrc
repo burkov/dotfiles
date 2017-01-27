@@ -29,6 +29,7 @@ syntax on
 set background=dark
 silent! colorscheme xoria256
 
+cnoreabbrev X x
 nnoremap <F4> :%s////c<Left><Left>
 nnoremap <F12> :set hls!<CR>
 nnoremap tt :tabnew<CR>

@@ -4,7 +4,7 @@ ZSH_THEME="candy"
 if [[ $(uname) == 'Darwin' ]]; then
     plugins=(sublime z git brew gitignore colored-man history-substring-search extract)
 else
-    plugins=(sublime z git gitignore colored-man history-substring-search extract)
+    plugins=(mvn sublime z git gitignore colored-man history-substring-search extract)
 fi
 
 source $ZSH/oh-my-zsh.sh

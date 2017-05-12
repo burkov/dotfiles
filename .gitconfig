@@ -7,8 +7,8 @@
     diff = auto
     grep = auto
 [user]
-    name = Alexander Burkov
-    email = abu@exante.eu
+    name = alexander.burkov
+    email = alexander.burkov@jetbrains.com
 [alias]
     st = status
     br = branch

@@ -1,5 +1,5 @@
 [core]
-	excludesfile = /Users/abu/.gitignore_global
+    excludesfile = /Users/abu/.gitignore_global
 [color]
     status = auto
     branch = auto
@@ -14,9 +14,6 @@
     co = checkout
     ci = commit
     wt = worktree
-    ogr = log --all --oneline --graph --decorate
     gr = log --all --graph --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(bold magenta)%cr %C(bold blue)%an%Creset'
-    whatis = show -s --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(bold magenta)%cr %C(bold blue)%an%Creset'
-    aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
 [push]
     default = current

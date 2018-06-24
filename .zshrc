@@ -1,7 +1,6 @@
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="candy"
 HYPHEN_INSENSITIVE="true"
-COMPLETION_WAITING_DOTS="true"
 
 plugins=(z git colored-man history-substring-search extract docker-compose)
 

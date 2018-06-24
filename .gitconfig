@@ -1,5 +1,4 @@
 [core]
-    editor = vim
 	excludesfile = /Users/abu/.gitignore_global
 [color]
     status = auto
@@ -19,19 +18,5 @@
     gr = log --all --graph --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(bold magenta)%cr %C(bold blue)%an%Creset'
     whatis = show -s --pretty=format:'%C(yellow)%h%Creset%C(auto)%d%Creset %s %C(bold magenta)%cr %C(bold blue)%an%Creset'
     aliases = !git config --get-regexp 'alias.*' | colrm 1 6 | sed 's/[ ]/ = /'
-#[merge]
-    #conflictstyle = diff3
-[mergetool "meld"]
-    cmd = meld --diff $BASE $LOCAL --diff $BASE $REMOTE --diff $LOCAL $MERGED $REMOTE
-#[pager]
-#    diff = diff-highlight | less
-#    log = diff-highlight | less -X
-#    show = diff-highlight | less
 [push]
     default = current
-[difftool "sourcetree"]
-	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /private/var/folders/v5/ktll7v7x19dd8nvsnvjskzm80000gn/T/AppTranslocation/BE4AF180-2A41-4136-9C0B-05C4CC92EBD0/d/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
-	trustExitCode = true

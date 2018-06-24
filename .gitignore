@@ -1,32 +1,3 @@
-# ignore all
 *
-!.psqlrc
-!.inputrc
-# git
 !.gitconfig
 !.gitignore
-
-# tmux
-!.tmux.conf
-
-# gdb
-!.gdbinit
-
-# zsh
-!.zshrc
-
-# vim
-!.vim
-!.vim/ru_keyboard_mappings
-!.vim/colors
-!.vim/colors/darkspectrum.vim
-!.vim/colors/xoria256.vim
-
-!bin
-!bin/diff-highlight
-# emacs
-!.emacs.d
-!.emacs.d/init.el
-!.emacs.d/color-themes/
-!.emacs.d/color-themes/themes
-!.emacs.d/color-themes/themes/xoria256.el

@@ -10,7 +10,7 @@ source $ZSH/oh-my-zsh.sh
 export LC_ALL=en_US.UTF-8
 
 export PATH=$PATH:$HOME/bin:$HOME/.local/bin
-export PATH=$PATH:/usr/lib/go-1.10/bin:/usr/local/node/10.12.0/bin:$HOME/go/bin
+export PATH=$PATH:/usr/lib/go-1.10/bin:/usr/local/node/11.6.0/bin:$HOME/go/bin
 export VISUAL=vim
 # export LESS="-iMSx4FXR"
 

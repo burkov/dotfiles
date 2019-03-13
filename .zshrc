@@ -13,7 +13,7 @@ export PATH=$PATH:$HOME/go/bin
 export PATH=$PATH:/usr/local/go/bin
 export PATH=$PATH:/usr/local/node/latest/bin
 
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export VISUAL=vim
 
 # 4k for Qt apps

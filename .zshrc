@@ -1,23 +1,23 @@
-ZSH=$HOME/.oh-my-zsh
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+
+# Path to your oh-my-zsh installation.
+export ZSH="/home/abu/.oh-my-zsh"
+
+# Set name of the theme to load --- if set to "random", it will
+# load a random theme each time oh-my-zsh is loaded, in which case,
+# to know which specific one was loaded, run: echo $RANDOM_THEME
+# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="candy"
 HYPHEN_INSENSITIVE="true"
-plugins=(z git colored-man-pages history-substring-search extract docker-compose)
+plugins=(z extract git history-substring-search)
 source $ZSH/oh-my-zsh.sh
 
-export LC_ALL=en_US.UTF-8
+# User configuration
+export LANG=en_US.UTF-8
+export EDITOR=vim
 
-export PATH=$PATH:$HOME/bin
-export PATH=$PATH:$HOME/.local/bin
-export PATH=$PATH:$HOME/go/bin
 
-export PATH=$PATH:/usr/local/go/bin
-export PATH=$PATH:/usr/local/node/latest/bin
-
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
-export VISUAL=vim
-
-# 4k for Qt apps
-export QT_SCREEN_SCALE_FACTORS=2
-
-# sdk man wants to be the last executed profile script
-source "$HOME/.sdkman/bin/sdkman-init.sh"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

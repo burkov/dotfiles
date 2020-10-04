@@ -1,5 +1,3 @@
-[core]
-    excludesfile = /Users/abu/.gitignore_global
 [color]
     status = auto
     branch = auto
@@ -20,3 +18,7 @@
     default = current
 [commit]
     gpgsign = false
+[core]
+	autocrlf = true
+[pull]
+	rebase = true
